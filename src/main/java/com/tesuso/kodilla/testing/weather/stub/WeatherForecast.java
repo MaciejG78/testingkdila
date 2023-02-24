@@ -1,7 +1,10 @@
 package com.tesuso.kodilla.testing.weather.stub;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class WeatherForecast {
 
@@ -24,4 +27,24 @@ public class WeatherForecast {
         return resultMap;
     }
 
+    public double calculateAverage() {
+        double temperatureSum = 0;
+
+        for (Map.Entry<String, Double> temperature : temperatures.getTemperatures().entrySet()) {
+            temperatureSum += temperature.getValue();
+        }
+
+        return temperatureSum / temperatures.getTemperatures().size();
+    }
+
+
+    public double calculateMedian() {
+        List<Double> sortedTemperatures = temperatures.getTemperatures().values().stream().sorted().collect(Collectors.toList());
+
+        if (sortedTemperatures.size() % 2 == 0) {
+            return (sortedTemperatures.get((sortedTemperatures.size()-1)/2) + sortedTemperatures.get(sortedTemperatures.size()/2))/2;
+        } else {
+            return sortedTemperatures.get(sortedTemperatures.size()/2);
+        }
+    }
 }
