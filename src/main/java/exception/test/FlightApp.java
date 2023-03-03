@@ -2,6 +2,7 @@ package exception.test;
 
 public class FlightApp {
     public static void main(String[] args) {
+
         Airport airport = new Airport();
         try {
             airport.findFilght(new Flight("Konin", "Barcelona"));
