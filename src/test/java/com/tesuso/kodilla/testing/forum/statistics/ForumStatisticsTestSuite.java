@@ -1,11 +1,11 @@
 package com.tesuso.kodilla.testing.forum.statistics;
 
-import org.junit.After;
 import org.junit.Assert;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import testing.forum.statistics.ForumStatistics;
-import testing.forum.statistics.Statistics;
+import com.tesuso.kodilla.testing.forumStatistics.ForumStatistics;
+import com.tesuso.kodilla.testing.forumStatistics.Statistics;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -35,8 +35,8 @@ class ForumStatisticsTestSuite {
         System.out.println("Test #" + testCounter + " starts.");
     }
 
-    @After
-    public void afterEveryTest() {
+    @AfterEach
+    public void afterEach() {
         forumStatistics.showStatistics();
         System.out.println("Test #" + testCounter + " ends.\n");
     }
