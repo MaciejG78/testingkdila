@@ -1,0 +1,27 @@
+Zadanie: implementacja algorytmu Euklidesa
+Przed Tobą wyzwanie, które zawiera w sobie poznane dotąd elementy.
+Nie jest to zwykłe zadanie, ponieważ jest złożone z kilku etapów.
+To wyzwanie polega na implementacji algorytmu Euklidesa.
+Pewnie już znasz ten algorytm, a jeżeli nie, to koniecznie zapoznaj się z jego opisem.
+Definicja algorytmu EuklidesaAlgorytm Euklidesa jest szybkim sposobem obliczania największego wspólnego dzielnika (NWD)
+dwóch, zwłaszcza dużych liczb całkowitych.
+Działanie w uproszczeniu: odejmujemy liczbę mniejszą od większej, następnie tę różnicę odejmujemy od liczby mniejszej.
+Powtarzamy to aż obie liczby staną się równe. Ta ostatnia wartość to nasz szukany wspólny dzielnik.
+Dodatkowo w rozwiązaniu możmy zastosować dwie drogi: z użyciem odejmowania lub dzielenia z resztą.
+Poniżej wyjaśniamy to konkretnie. Wyzwanie może wydawać się trudne na samym początku, ale jest to
+naprawdę prosty program. Podzielimy implementację tego programu na konkretne etapy, co pozwoli nam na
+spojrzenie na nie w prosty sposób. Skupmy się na wykorzystaniu odejmowania. Aby wykonać poprawnie to
+zadanie potrzebne będzie wykorzystanie poniższych instrukcji języka Java: while,if-else,System.out.println().
+Rozpocznij swój program w edytorze udostępnionym przez Kodillę, aby mieć wszystko gotowe przed implementacją.
+Pierwszym krokiem do utworzenia programu powinna być deklaracja zmiennych. Wiemy, że algorytm operuje na 2 zmiennych,
+dla których szuka dzielnika, wiemy też, że liczby są liczbami całkowitymi. Stwórz i przypisz im domyślne wartości.
+Kolejnym krokiem jest utworzenie pętli while, która będzie trwać do końca znalezienia wspólnego dzielnika 2 zmiennych.
+Wewnątrz pętli while należy skorzystać z warunku if i else oraz operatora -=.
+Dzięki temu nasz program wykona działanie a = a - b, czyli pomniejszy wartość a o wartość b i przypisze
+ją do zmiennej a: a -= b;
+Wykonując te trzy kroki i implementując odpowiednio logikę, jesteś w stanie zaimplementować algorytm Euklidesa.
+Swój kod skompiluj i prześlij do Mentora. Powodzenia! Użycie modulo Dla treningu możesz też spróbować użycia
+reszty z dzielenia. Aby obliczyć NWD(a, b) drugim sposobem, wykonujemy kolejno następujące kroki:
+Dzielimy z resztą liczbę a przez liczbę b.Jeżeli reszta = 0, to NWD(a,b)=b.
+Jeżeli reszta !=0, to przypisujemy liczbie a wartość liczby b, a liczbie b wartość otrzymanej reszty.
+Następnie wykonujemy ponownie punkt 1

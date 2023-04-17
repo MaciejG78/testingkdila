@@ -1,0 +1,25 @@
+Zadanie: Kolekcjonujemy figury (i testujemy to).
+Celem zadania jest przetestowanie klasy, którą musisz napisać, o nazwie – powiedzmy – ShapeCollector, przy następujących założeniach:
+•	Klasa ta przechowuje figury geometryczne w kolekcji ArrayList. Figury są następujące: kwadrat, koło, trójkąt (oczywiście użyj angielskich nazw klas).
+•	Utwórz interfejs Shape zawierający deklarację metod:
+o	metoda zwracająca nazwę figury,
+o	metoda zwracająca pole powierzchni tej figury.
+•	Klasy figur implementują interfejs Shape oraz posiadają wszystkie wymagane przez interfejs Shape metody.
+•	Klasa ShapeCollector ma cztery metody:
+o	dodającą figurę do kolekcji,
+o	usuwającą figurę z kolekcji,
+o	pobierającą z kolekcji figurę z pozycji n listy,
+o	zwracającą nazwy wszystkich figur w postaci jednego Stringa.
+Aby przygotować rozwiązanie zadania:
+1.	W katalogu src/main/java utwórz pakiet com.kodilla.testing.shape.
+2.	W stworzonym pakiecie utwórz interfejs Shape, zawierający dwie metody: getShapeName() oraz getField().
+3.	Utwórz klasy reprezentujące poszczególne figury – posiadające już właściwe implementacje metod interfejsu.
+4.	Utwórz klasę ShapeCollector z metodami:
+o	addFigure(Shape shape),
+o	removeFigure(Shape shape),
+o	getFigure(int n) oraz
+o	showFigures().
+5.	W katalogu src/test/java utwórz pakiet com.kodilla.testing.shape.
+6.	Stwórz w tym pakiecie klasę testową (zbiór testów) ShapeCollectorTestSuite.
+7.	Napisz testy sprawdzające metody klasy ShapeCollector. W swoich testach wykorzystaj klasy wewnętrzne i adnotacje @Nested oraz @DisplayName.
+Zadanie wykonaj zgodnie z podejściem TDD: najpierw napisz testy (wyślij klasę z testami jako snippet do Mentora poprzez czat przed dalszym wykonywaniem zadania), a dopiero potem uzupełnij implementację metod klasy ShapeCollector.

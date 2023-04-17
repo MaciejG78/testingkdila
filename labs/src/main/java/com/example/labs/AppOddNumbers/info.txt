@@ -1,0 +1,18 @@
+/*
+6.3. JUnit, czyli pierwsze testy!
+        Zadanie: test klasy wybierającej parzyste liczby z kolekcji
+        Celem zadania jest przetestowanie klasy, która udostępnia metodę przyjmującą jako argument listę obiektów typu Integer i zwracającą nową listę obiektów tego samego typu. Obiekty te mają stanowić podzbiór danych wejściowych z pominięciem liczb nieparzystych.
+        Brzmi strasznie? Już mówimy, o co chodzi.
+        Aby przygotować rozwiązanie zadania:
+        1.	W katalogu src/main/java utwórz pakiet com.kodilla.testing.collection
+        2.	W utworzonym pakiecie stwórz klasę OddNumbersExterminator, posiadającą metodę public List<Integer> exterminate(List<Integer> numbers)
+        o	przyjmującą jako argument kolekcję List liczb typu Integer,
+        o	która zwraca również kolekcję List liczb typu Integer, stanowiącą podzbiór kolekcji wejściowej z pominięciem liczb nieparzystych.
+        3.	W katalogu src/test/java utwórz pakiet com.kodilla.testing.collection.
+        4.	W utworzonym pakiecie stwórz klasę testową (zbiór testów) CollectionTestSuite, a w niej napisz testy sprawdzające, czy metoda filtrująca liczby nieparzyste działa poprawnie:
+        o	testOddNumbersExterminatorEmptyList – sprawdzający, czy klasa zachowuje się poprawnie, gdy lista jest pusta,
+        o	testOddNumbersExterminatorNormalList – sprawdzający, czy klasa zachowuje się poprawnie, gdy lista zawiera liczby parzyste i nieparzyste.
+        5.	Korzystając z adnotacji @DisplayName nadaj powyższym metodom nazwę określającą, co dany test sprawdza.
+        6.	Użyj również adnotacji @BeforeEach oraz @AfterEach, aby wyświetlić informację o tym, jakie operacje (testy) są aktualnie wykonywane.
+        7.	Zadanie dodatkowe (nieobowiązkowe): spróbuj wykorzystać metodę Arrays.asList() do utworzenia listy zawierającej numery w teście. Poszukaj w dokumentacji języka Java, jak używać tej metody, oraz sprawdź, jakie inne metody znajdują się w klasie Arrays.
+*/
